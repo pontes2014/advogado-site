@@ -1,582 +1,218 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description"
-    content="Dr. Mateus Souza – Advogado Freelancer especializado em Direito Cível, Trabalhista, Criminal e Previdenciário. Assessoria jurídica estratégica online para todo o Brasil." />
-  <meta name="keywords"
-    content="advogado freelancer, advogado online, consultoria jurídica, assessoria jurídica, advogado cível, advogado trabalhista, advogado criminal, advogado previdenciário, OAB, atendimento online" />
-  <meta name="author" content="Dr. Mateus Souza" />
-  <meta property="og:title" content="Dr. Mateus Souza | Assessoria Jurídica Estratégica" />
-  <meta property="og:description"
-    content="Defesa técnica, estratégia inteligente e compromisso real com resultados. Atendimento online para todo o Brasil." />
-  <meta property="og:type" content="website" />
-  <title>Dr. Mateus Souza | Assessoria Jurídica Estratégica</title>
-
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap"
-    rel="stylesheet" />
-
- 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Dr. Mateus Souza, advogado inscrito na OAB/SP sob o nº 525.590. Consulte as áreas de atuação e os canais de atendimento online.">
+  <meta property="og:title" content="Dr. Mateus Souza | Advocacia e Consultoria Jurídica">
+  <meta property="og:description" content="Áreas de atuação e canais de contato do Dr. Mateus Souza. Atendimento online.">
+  <meta property="og:type" content="website">
+  <title>Dr. Mateus Souza | Advocacia e Consultoria Jurídica</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/sections.css">
+  <script src="assets/js/page-loader.js" defer></script>
+  <script src="assets/js/navigation.js" defer></script>
+  <script src="assets/js/contact-form.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" async></script>
 </head>
-
 <body>
-
-  
-  <nav class="navbar" id="navbar">
-    <div class="nav-container">
-      <a href="#home" class="nav-logo">
-        <img src="assets/images/logo.png" alt="Logo Escritório" class="logo-img" />
-        <div class="logo-text">
-          <span class="logo-name">Dr. Mateus Souza</span>
-          <span class="logo-sub">OAB/SP 525.590</span>
-        </div>
+  <div class="page-loader" id="page-loader" hidden>
+    <div class="page-loader-content">
+      <img src="assets/images/Emblema%20Jur%C3%ADdico%20Dourado%20Mateus%20Souza.png" width="1254" height="1254" alt="">
+      <span class="page-loader-line" aria-hidden="true"></span>
+      <p role="status">Carregando…</p>
+    </div>
+  </div>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+  <header class="site-header">
+    <nav class="container navigation" aria-label="Navegação principal">
+      <a class="brand" href="#inicio">
+        <img src="assets/images/logo.png" width="44" height="44" alt="">
+        <span>Dr. Mateus Souza <small>OAB/SP 525.590</small></span>
       </a>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#sobre" class="nav-link">Sobre</a></li>
-        <li><a href="#areas" class="nav-link">Áreas de Atuação</a></li>
-        <li><a href="#principios" class="nav-link">Princípios</a></li>
-        <li><a href="#contato" class="nav-link">Contato</a></li>
-        <li>
-          <a href="https://wa.me/5513981101869?text=Olá%2C%20gostaria%20de%20uma%20consulta%20jurídica"
-            class="btn btn-nav" target="_blank" rel="noopener">
-            <i class="fab fa-whatsapp"></i> WhatsApp
-          </a>
-        </li>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu" hidden>Menu</button>
+      <ul id="menu" class="menu">
+        <li><a href="#areas">Áreas de atuação</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#atendimento">Atendimento</a></li>
+        <li><a href="#duvidas">Dúvidas</a></li>
+        <li><a class="nav-contact" href="#contato">Contato</a></li>
       </ul>
-      <button class="hamburger" id="hamburger" aria-label="Menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </nav>
+    </nav>
+  </header>
 
+  <main id="conteudo" tabindex="-1">
+    <section class="hero" id="inicio" tabindex="-1" aria-labelledby="nome-advogado">
 
-  <section class="hero" id="home">
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <div class="hero-badge">
-        <span class="badge-line"></span>
-        <span>OAB/SP 525.590 · Atuação Nacional</span>
-        <span class="badge-line"></span>
-      </div>
-      <h1 class="hero-name">Dr. Mateus<br /><em>Souza</em></h1>
-      <p class="hero-subtitle">Assessoria Jurídica Estratégica</p>
-      <div class="hero-areas">
-        <span>Cível</span>
-        <span class="divider">|</span>
-        <span>Trabalhista</span>
-        <span class="divider">|</span>
-        <span>Criminal</span>
-        <span class="divider">|</span>
-        <span>Previdenciário</span>
-      </div>
-      <div class="hero-cta">
-        <a href="https://wa.me/5513981101869?text=Olá%2C%20gostaria%20de%20uma%20consulta%20jurídica"
-          class="btn btn-primary" target="_blank" rel="noopener">
-          <i class="fab fa-whatsapp"></i> Fale comigo no WhatsApp
-        </a>
-        <a href="#contato" class="btn btn-secondary">
-          <i class="far fa-calendar-alt"></i> Agendar Consulta
-        </a>
-      </div>
-    </div>
-    <div class="hero-scroll">
-      <span>Rolar</span>
-      <div class="scroll-line"></div>
-    </div>
-  </section>
-
-  <!-- ===== SOBRE SECTION ===== -->
-  <section class="sobre" id="sobre">
-    <div class="container">
-      <div class="sobre-grid">
-        <div class="sobre-text" data-aos="fade-right">
-          <div class="section-label">Sobre o Advogado</div>
-          <h2 class="section-title">Experiência e <em>Comprometimento</em> a Serviço da Justiça</h2>
-          <p class="sobre-desc">
-            Com uma atuação sólida no direito brasileiro, o Dr. Mateus Souza
-            constrói sua trajetória baseada em rigor técnico, ética profissional e resultados
-            concretos para seus clientes. Atua de forma estratégica em demandas complexas,
-            priorizando a segurança jurídica e a eficiência.
-          </p>
-          <p class="sobre-desc">
-            Acreditando que cada caso é único, o Dr. Mateus oferece um atendimento completamente
-            personalizado, combinando profundo conhecimento jurídico com uma comunicação clara e
-            acessível. <strong>Atendimento online para todo o Brasil</strong>, sem fronteiras geográficas.
-          </p>
-
-          <div class="sobre-stats">
-            <div class="stat-item">
-              <span class="stat-number">Clareza no Processo</span>
-              <span class="stat-label">Atualizações constantes</span>
-            </div>
-            <div class="stat-divider"></div>
-            <div class="stat-item">
-              <span class="stat-number">Resposta Rápida</span>
-              <span class="stat-label">Total Dedicação ao cleinte</span>
-            </div>
-            <div class="stat-divider"></div>
-            <div class="stat-item">
-              <span class="stat-number">100%</span>
-              <span class="stat-label">Dedicação ao Cliente</span>
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Advocacia e consultoria jurídica</p>
+          <h1 id="nome-advogado">Dr. Mateus <em>Souza</em></h1>
+          <p class="hero-description">Atendimento jurídico online para todo o Brasil.</p>
+          <div class="actions">
+            <a class="button button-primary" href="https://wa.me/5513981101869" target="_blank" rel="noopener">Contato pelo WhatsApp</a>
+            <div class="booking-action">
+              <a class="button button-outline" href="https://wa.me/5513981101869?text=Ol%C3%A1%2C%20gostaria%20de%20consultar%20os%20hor%C3%A1rios%20dispon%C3%ADveis%20para%20uma%20consulta%20jur%C3%ADdica." target="_blank" rel="noopener" aria-describedby="booking-note">Solicitar horário</a>
+              <p class="booking-note" id="booking-note">O horário é confirmado pelo WhatsApp.</p>
             </div>
           </div>
-
-          <div class="sobre-badges">
-            <div class="badge-item">
-              <i class="fas fa-balance-scale"></i>
-              <span>OAB/SP 525.590</span>
-            </div>
-            <div class="badge-item">
-              <i class="fas fa-laptop"></i>
-              <span>Atendimento Online</span>
-            </div>
-            <div class="badge-item">
-              <i class="fas fa-map-marker-alt"></i>
-              <span>Atuação Nacional</span>
-            </div>
-          </div>
-
-          <a href="https://www.instagram.com/mateusg.souza/" class="btn btn-outline" target="_blank" rel="noopener">
-            <i class="fab fa-instagram"></i> Siga no Instagram
-          </a>
+          <p class="registration">OAB/SP 525.590</p>
         </div>
-        <div class="sobre-image" data-aos="fade-left">
-          <div class="image-frame">
-            <img src="assets/images/lawyer-portrait.jpg" alt="Dr. Mateus Souza – Advogado" loading="lazy" />
-            <div class="image-accent"></div>
-          </div>
-          <div class="image-card">
-            <i class="fas fa-award"></i>
-            <div>
-              <strong>Especialista</strong>
-              <span>Direito e Estratégia Jurídica</span>
-            </div>
+        <div class="hero-photo">
+          <img src="assets/images/hero-bg.jpg" width="2560" height="1707" alt="" fetchpriority="high">
+        </div>
+      </div>
+    </section>
+
+    <nav class="container quick-nav" aria-label="Atalhos de atendimento">
+      <a href="#areas"><strong>Áreas de atuação</strong><span>Veja os assuntos atendidos</span></a>
+      <a href="#atendimento"><strong>Consulta online</strong><span>Veja como funciona</span></a>
+      <a href="#contato"><strong>Canais de contato</strong><span>Segunda a sexta, das 8h às 18h</span></a>
+    </nav>
+
+    <section class="section" id="areas" tabindex="-1" aria-labelledby="titulo-areas">
+      <div class="container">
+        <div class="section-heading">
+          <h2 id="titulo-areas">Áreas de <em>atuação</em></h2>
+          <p>Consultoria e representação jurídica em seis áreas do direito.</p>
+        </div>
+        <div class="area-layout">
+          <img class="area-photo" src="assets/images/law-books.jpg" width="564" height="845" alt="" loading="lazy" decoding="async">
+          <div class="area-grid">
+            <article class="area-card"><h3>Direito Cível</h3><p>Contratos, cobranças, indenizações e responsabilidade civil.</p>
+              <a class="area-contact" href="#contato" data-contact-subject="Direito Cível" aria-label="Contato sobre Direito Cível">Entrar em contato</a>
+            </article>
+            <article class="area-card"><h3>Direito Trabalhista</h3><p>Rescisões, horas extras, FGTS e relações de trabalho.</p>
+              <a class="area-contact" href="#contato" data-contact-subject="Direito Trabalhista" aria-label="Contato sobre Direito Trabalhista">Entrar em contato</a>
+            </article>
+            <article class="area-card"><h3>Direito Criminal</h3><p>Defesa criminal e acompanhamento em inquéritos policiais e processos.</p>
+              <a class="area-contact" href="#contato" data-contact-subject="Direito Criminal" aria-label="Contato sobre Direito Criminal">Entrar em contato</a>
+            </article>
+            <article class="area-card"><h3>Direito Previdenciário</h3><p>Aposentadorias, pensão por morte, benefícios por incapacidade e revisões do INSS.</p>
+              <a class="area-contact" href="#contato" data-contact-subject="Direito Previdenciário" aria-label="Contato sobre Direito Previdenciário">Entrar em contato</a>
+            </article>
+            <article class="area-card"><h3>Direito Imobiliário</h3><p>Compra e venda, locação, usucapião e regularização de imóveis.</p>
+              <a class="area-contact" href="#contato" data-contact-subject="Direito Imobiliário" aria-label="Contato sobre Direito Imobiliário">Entrar em contato</a>
+            </article>
+            <article class="area-card"><h3>Direito de Família</h3><p>Divórcio, guarda, pensão alimentícia, inventário e partilha de bens.</p>
+              <a class="area-contact" href="#contato" data-contact-subject="Direito de Família" aria-label="Contato sobre Direito de Família">Entrar em contato</a>
+            </article>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="diferencial" id="diferencial">
-    <div class="diferencial-overlay"></div>
-    <div class="container">
-      <div class="diferencial-content" data-aos="fade-up">
-        <div class="diferencial-quote">
-          <span class="quote-mark">"</span>
-          <h2>Defesa técnica, estratégia inteligente<br />e compromisso real com resultados.</h2>
-          <span class="quote-mark closing">"</span>
-        </div>
-        <p class="diferencial-text">
-          Cada cliente merece uma defesa personalizada, construída sobre bases sólidas de conhecimento
-          jurídico, ética inabalável e dedicação genuína. Não somos apenas advogados — somos parceiros
-          estratégicos na proteção dos seus direitos.
-        </p>
-        <a href="https://wa.me/5513981101869?text=Olá%2C%20gostaria%20de%20conversar%20sobre%20meu%20caso"
-          class="btn btn-gold" target="_blank" rel="noopener">
-          <i class="fas fa-comments"></i> Converse comigo
-        </a>
-      </div>
-    </div>
-  </section>
-
-
-  <section class="areas" id="areas">
-    <div class="container">
-      <div class="section-header" data-aos="fade-up">
-        <div class="section-label">Especialidades</div>
-        <h2 class="section-title">Áreas de <em>Atuação</em></h2>
-        <p class="section-desc">Atuação estratégica e especializada nas principais áreas do direito brasileiro, com foco
-          em resultados e proteção integral dos seus interesses.</p>
-      </div>
-      <div class="areas-grid">
-
-        <div class="area-card" data-aos="fade-up" data-aos-delay="100">
-          <div class="card-icon">
-            <i class="fas fa-gavel"></i>
-          </div>
-          <h3>Direito Cível</h3>
-          <p>Contratos, responsabilidade civil, cobranças, indenizações e disputas patrimoniais. Defesa estratégica em
-            todas as instâncias.</p>
-          <div class="card-hover-line"></div>
-        </div>
-
-        <div class="area-card" data-aos="fade-up" data-aos-delay="200">
-          <div class="card-icon">
-            <i class="fas fa-briefcase"></i>
-          </div>
-          <h3>Direito Trabalhista</h3>
-          <p>Rescisões, horas extras, assédio moral, FGTS e negociações trabalhistas. Proteção completa dos direitos do
-            trabalhador e do empregador.</p>
-          <div class="card-hover-line"></div>
-        </div>
-
-        <div class="area-card" data-aos="fade-up" data-aos-delay="300">
-          <div class="card-icon">
-            <i class="fas fa-shield-alt"></i>
-          </div>
-          <h3>Direito Criminal</h3>
-          <p>Defesa criminal especializada, habeas corpus, revisão criminal e acompanhamento em inquéritos policiais.
-            Proteção da sua liberdade e honra.</p>
-          <div class="card-hover-line"></div>
-        </div>
-
-        <div class="area-card" data-aos="fade-up" data-aos-delay="400">
-          <div class="card-icon">
-            <i class="fas fa-hand-holding-heart"></i>
-          </div>
-          <h3>Direito Previdenciário</h3>
-          <p>Aposentadorias, benefícios por incapacidade, pensão por morte e revisão de benefícios do INSS. Conquiste o
-            que é seu por direito.</p>
-          <div class="card-hover-line"></div>
-        </div>
-
-        <div class="area-card" data-aos="fade-up" data-aos-delay="500">
-          <div class="card-icon">
-            <i class="fas fa-home"></i>
-          </div>
-          <h3>Direito Imobiliário</h3>
-          <p>Compra e venda de imóveis, usucapião, inventários, locações e regularização fundiária. Segurança jurídica
-            no seu patrimônio.</p>
-          <div class="card-hover-line"></div>
-        </div>
-
-        <div class="area-card" data-aos="fade-up" data-aos-delay="600">
-          <div class="card-icon">
-            <i class="fas fa-users"></i>
-          </div>
-          <h3>Direito de Família</h3>
-          <p>Divórcio, guarda de filhos, pensão alimentícia, inventário e partilha de bens. Suporte humanizado em
-            momentos delicados.</p>
-          <div class="card-hover-line"></div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-
-  <section class="principios" id="principios">
-    <div class="container">
-      <div class="principios-grid">
-        <div class="principios-image" data-aos="fade-right">
-          <div class="image-wrapper">
-            <img src="assets/images/law-books.jpg" alt="Biblioteca jurídica" loading="lazy" />
-            <div class="image-overlay-text">
-              <span>Ética</span>
-              <span>Estratégia</span>
-              <span>Resultado</span>
-            </div>
-          </div>
-        </div>
-        <div class="principios-content" data-aos="fade-left">
-          <div class="section-label">Nossos Valores</div>
-          <h2 class="section-title">Princípios que <em>Norteiam</em> cada Caso</h2>
-          <p class="principios-desc">
-            A excelência jurídica vai além do conhecimento técnico. É construída sobre valores sólidos
-            que guiam cada decisão, cada estratégia e cada relacionamento com o cliente.
-          </p>
-          <div class="valores-list">
-            <div class="valor-item" data-aos="fade-left" data-aos-delay="100">
-              <div class="valor-icon">
-                <i class="fas fa-user-tie"></i>
-              </div>
-              <div class="valor-text">
-                <h4>Atendimento Personalizado</h4>
-                <p>Cada caso recebe atenção exclusiva, com estratégias desenvolvidas especificamente para sua situação.
-                </p>
-              </div>
-            </div>
-            <div class="valor-item" data-aos="fade-left" data-aos-delay="200">
-              <div class="valor-icon">
-                <i class="fas fa-eye"></i>
-              </div>
-              <div class="valor-text">
-                <h4>Transparência Total</h4>
-                <p>Comunicação honesta sobre prazos, possibilidades e riscos. Você sempre saberá o que está acontecendo.
-                </p>
-              </div>
-            </div>
-            <div class="valor-item" data-aos="fade-left" data-aos-delay="300">
-              <div class="valor-icon">
-                <i class="fas fa-chess"></i>
-              </div>
-              <div class="valor-text">
-                <h4>Estratégia Jurídica Sólida</h4>
-                <p>Análise profunda de cada caso para construir a melhor tese jurídica e maximizar as chances de
-                  sucesso.</p>
-              </div>
-            </div>
-            <div class="valor-item" data-aos="fade-left" data-aos-delay="400">
-              <div class="valor-icon">
-                <i class="fas fa-comments"></i>
-              </div>
-              <div class="valor-text">
-                <h4>Comunicação Clara</h4>
-                <p>Linguagem acessível e objetiva. Sem juridiquês desnecessário — você entende cada etapa do seu
-                  processo.</p>
-              </div>
-            </div>
+    <section class="section band" id="sobre" tabindex="-1" aria-labelledby="titulo-sobre">
+      <div class="container profile-grid">
+        <figure class="profile-photo">
+          <img src="assets/images/lawyer-portrait.jpeg" width="772" height="1280" alt="Retrato do Dr. Mateus Souza" loading="lazy" decoding="async">
+          <figcaption><strong>Dr. Mateus Souza</strong><span>OAB/SP 525.590</span></figcaption>
+        </figure>
+        <div class="profile-copy">
+          <h2 id="titulo-sobre">Sobre o <em>advogado</em></h2>
+          <p>Mateus Souza é advogado inscrito na OAB/SP sob o nº 525.590. Atua em consultoria e representação jurídica e oferece atendimento online para todo o Brasil.</p>
+          <div class="approach">
+            <h3>Como conduz o trabalho</h3>
+            <p>A análise parte das circunstâncias de cada caso. Durante o atendimento, o advogado explica as opções e os próximos passos em linguagem clara, com atenção ao sigilo profissional.</p>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="depoimentos" id="depoimentos">
-    <div class="container">
-      <div class="section-header" data-aos="fade-up">
-        <div class="section-label">Depoimentos</div>
-        <h2 class="section-title">O que dizem os <em>Clientes</em></h2>
+    <section class="section" id="atendimento" tabindex="-1" aria-labelledby="titulo-atendimento">
+      <div class="container">
+        <h2 id="titulo-atendimento">Como funciona <em>o atendimento</em></h2>
+        <ol class="steps">
+          <li><h3>Primeiro contato</h3><p>Informe seu nome, um meio de retorno e o assunto geral da consulta.</p></li>
+          <li><h3>Combinação do horário</h3><p>O horário e o canal da consulta online são combinados por mensagem.</p></li>
+          <li><h3>Consulta jurídica</h3><p>Na consulta, o advogado analisa a situação e explica as opções e os próximos passos.</p></li>
+        </ol>
       </div>
-      <div class="depoimentos-grid">
-        <div class="depoimento-card" data-aos="fade-up" data-aos-delay="100">
-          <div class="stars">
-            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-            <i class="fas fa-star"></i><i class="fas fa-star"></i>
-          </div>
-          <p>"O Dr. Mateus foi fundamental para a resolução do meu processo trabalhista. Atendimento impecável, sempre
-            disponível e com uma estratégia cirúrgica. Ganhei a causa que parecia impossível."</p>
-          <div class="depoimento-autor">
-            <div class="autor-avatar">M</div>
-            <div>
-              <strong>Marcos Oliveira</strong>
-              <span>Cliente – Direito Trabalhista</span>
-            </div>
-          </div>
-        </div>
-        <div class="depoimento-card" data-aos="fade-up" data-aos-delay="200">
-          <div class="stars">
-            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-            <i class="fas fa-star"></i><i class="fas fa-star"></i>
-          </div>
-          <p>"Precisei de ajuda urgente com um processo criminal e o Dr. Mateus me atendeu prontamente, mesmo online.
-            Explicou tudo com clareza e conduziu minha defesa com maestria. Recomendo muito!"</p>
-          <div class="depoimento-autor">
-            <div class="autor-avatar">A</div>
-            <div>
-              <strong>Ana Paula Santos</strong>
-              <span>Cliente – Direito Criminal</span>
-            </div>
-          </div>
-        </div>
-        <div class="depoimento-card" data-aos="fade-up" data-aos-delay="300">
-          <div class="stars">
-            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-            <i class="fas fa-star"></i><i class="fas fa-star"></i>
-          </div>
-          <p>"Consegui minha aposentadoria por invalidez graças ao trabalho excepcional do Dr. Mateus. Ele conhece cada
-            detalhe da legislação previdenciária e lutou pelo meu direito até o fim."</p>
-          <div class="depoimento-autor">
-            <div class="autor-avatar">J</div>
-            <div>
-              <strong>José Carlos Lima</strong>
-              <span>Cliente – Direito Previdenciário</span>
-            </div>
-          </div>
+    </section>
+
+    <section class="section band" id="duvidas" tabindex="-1" aria-labelledby="titulo-duvidas">
+      <div class="container split">
+        <h2 id="titulo-duvidas">Perguntas <em>frequentes</em></h2>
+        <div class="faq">
+          <details><summary>Como funciona a consulta online?</summary><p>O horário e o canal são combinados no primeiro contato. Na consulta, você pode explicar a situação e tirar dúvidas diretamente com o advogado.</p></details>
+          <details><summary>O que devo preparar para a consulta?</summary><p>Anote suas principais dúvidas e reúna as datas e os documentos relevantes para ter à mão durante a conversa.</p></details>
+          <details><summary>Quais são os horários de atendimento?</summary><p>O atendimento é de segunda a sexta, das 8h às 18h. Consulte a disponibilidade pelo WhatsApp.</p></details>
+          <details><summary>Como envio documentos?</summary><p>Aguarde a orientação do advogado sobre quais documentos são necessários e qual canal usar para enviá-los.</p></details>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="contato" id="contato">
-    <div class="container">
-      <div class="contato-grid">
-        <div class="contato-info" data-aos="fade-right">
-          <div class="section-label">Entre em Contato</div>
-          <h2 class="section-title">Vamos Conversar<br />sobre o seu <em>Caso</em></h2>
-          <p class="contato-desc">
-            Dê o primeiro passo para a resolução do seu problema jurídico.
-            Entre em contato agora e agende uma consulta estratégica.
-          </p>
-
-          <div class="contato-items">
-            <div class="contato-item">
-              <div class="contato-icon">
-                <i class="fab fa-whatsapp"></i>
-              </div>
-              <div>
-                <span class="contato-label">WhatsApp</span>
-                <a href="https://wa.me/5513981101869" class="contato-value" target="_blank" rel="noopener">(13)
-                  98110-1869</a>
-              </div>
-            </div>
-            <div class="contato-item">
-              <div class="contato-icon">
-                <i class="fas fa-phone"></i>
-              </div>
-              <div>
-                <span class="contato-label">Telefone</span>
-                <a href="tel:+5513981101869" class="contato-value">(13) 98110-1869</a>
-              </div>
-            </div>
-            <div class="contato-item">
-              <div class="contato-icon">
-                <i class="fas fa-envelope"></i>
-              </div>
-              <div>
-                <span class="contato-label">E-mail Profissional</span>
-                <a href="mailto:contato adv_mat@adv.oabsp.org.br" class="contato-value">contato@drmateussouza.adv.br</a>
-              </div>
-            </div>
-            <div class="contato-item">
-              <div class="contato-icon">
-                <i class="fas fa-clock"></i>
-              </div>
-              <div>
-                <span class="contato-label">Horário de Atendimento</span>
-                <span class="contato-value">Seg – Sex: 8h às 18h</span>
-              </div>
-            </div>
-            <div class="contato-item">
-              <div class="contato-icon">
-                <i class="fas fa-laptop-house"></i>
-              </div>
-              <div>
-                <span class="contato-label">Modalidade</span>
-                <span class="contato-value">Atendimento online para todo o Brasil</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="social-links">
-            <a href="https://instagram.com/drmateussouza" class="social-link" target="_blank" rel="noopener"
-              aria-label="Instagram">
-              <i class="fab fa-instagram"></i>
-            </a>
-            <a href="https://linkedin.com/in/drmateussouza" class="social-link" target="_blank" rel="noopener"
-              aria-label="LinkedIn">
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-            <a href="https://wa.me/5513981101869" class="social-link" target="_blank" rel="noopener"
-              aria-label="WhatsApp">
-              <i class="fab fa-whatsapp"></i>
-            </a>
+    <section class="section contact-section" id="contato" tabindex="-1" aria-labelledby="titulo-contato">
+      <div class="container split">
+        <div>
+          <h2 id="titulo-contato">Entre em <em>contato</em></h2>
+          <dl class="contact-list">
+            <div><dt>WhatsApp</dt><dd><a href="https://wa.me/5513981101869" target="_blank" rel="noopener">(13) 98110-1869</a></dd></div>
+            <div><dt>Telefone</dt><dd><a href="tel:+5513981101869">(13) 98110-1869</a></dd></div>
+            <div class="contact-list-wide"><dt>E-mail</dt><dd><a href="mailto:contato@drmateussouza.adv.br">contato@drmateussouza.adv.br</a></dd></div>
+            <div class="contact-list-wide"><dt>Horário</dt><dd>Segunda a sexta, das 8h às 18h</dd></div>
+            <div><dt>Instagram</dt><dd><a href="https://www.instagram.com/mateusg.souza/" target="_blank" rel="noopener">@mateusg.souza</a></dd></div>
+          </dl>
+          <div class="client-contact">
+            <p id="client-contact-note">Para falar sobre um atendimento em andamento.</p>
+            <a class="button button-outline" href="https://wa.me/5513981101869?text=Ol%C3%A1!%20J%C3%A1%20sou%20cliente%20e%20gostaria%20de%20falar%20sobre%20meu%20atendimento%20em%20andamento." target="_blank" rel="noopener" aria-describedby="client-contact-note">Já sou cliente</a>
           </div>
         </div>
-
-        <div class="contato-form" data-aos="fade-left">
-          <form class="form" id="contactForm">
-            <h3>Envie uma Mensagem</h3>
-            <div class="form-group">
-              <label for="nome">Nome Completo</label>
-              <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required />
-            </div>
-            <div class="form-row">
-              <div class="form-group">
-                <label for="email">E-mail</label>
-                <input type="email" id="email" name="email" placeholder="seu@email.com" required />
-              </div>
-              <div class="form-group">
-                <label for="telefone">Telefone / WhatsApp</label>
-                <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999" />
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="area">Área de Interesse</label>
-              <select id="area" name="area">
-                <option value="">Selecione uma área</option>
-                <option value="civel">Direito Cível</option>
-                <option value="trabalhista">Direito Trabalhista</option>
-                <option value="criminal">Direito Criminal</option>
-                <option value="previdenciario">Direito Previdenciário</option>
-                <option value="imobiliario">Direito Imobiliário</option>
-                <option value="familia">Direito de Família</option>
-                <option value="outro">Outro</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="mensagem">Descreva seu Caso</label>
-              <textarea id="mensagem" name="mensagem" rows="4"
-                placeholder="Descreva brevemente sua situação jurídica..." required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary btn-full">
-              <i class="fas fa-paper-plane"></i> Enviar Mensagem
-            </button>
-            <p class="form-note">
-              <i class="fas fa-lock"></i> Suas informações são confidenciais e protegidas pelo sigilo profissional.
-            </p>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <span class="footer-logo">Dr. Mateus Souza</span>
-          <p>Assessoria Jurídica Estratégica com ética, técnica e compromisso com seus resultados.</p>
-          <p class="footer-oab">OAB/SP 525.590</p>
-        </div>
-        <div class="footer-links">
-          <h4>Navegação</h4>
-          <ul>
-            <li><a href="#home">Início</a></li>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#areas">Áreas de Atuação</a></li>
-            <li><a href="#principios">Princípios</a></li>
-            <li><a href="#contato">Contato</a></li>
-          </ul>
-        </div>
-        <div class="footer-areas">
-          <h4>Especialidades</h4>
-          <ul>
-            <li>Direito Cível</li>
-            <li>Direito Trabalhista</li>
-            <li>Direito Criminal</li>
-            <li>Direito Previdenciário</li>
-            <li>Direito Imobiliário</li>
-            <li>Direito de Família</li>
-          </ul>
-        </div>
-        <div class="footer-contact">
-          <h4>Contato</h4>
-          <p><i class="fab fa-whatsapp"></i> (13) 98110-1869</p>
-          <p><i class="fas fa-envelope"></i> contato adv_mat@adv.oabsp.org.br</p>
-          <p><i class="fas fa-laptop"></i> Atendimento Online · Brasil</p>
-          <div class="footer-social">
-            <a href="https://www.instagram.com/mateusg.souza/" target="_blank" rel="noopener" aria-label="Instagram"><i
-                class="fab fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/mateus-souza-57919031a/" target="_blank" rel="noopener"
-              aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://wa.me/5513981101869" target="_blank" rel="noopener" aria-label="WhatsApp"><i
-                class="fab fa-whatsapp"></i></a>
+        <form id="contact-form" class="contact-form" tabindex="-1" aria-labelledby="contact-form-title" aria-describedby="contact-hint" hidden>
+          <h3 id="contact-form-title">Envie uma mensagem</h3>
+          <p id="contact-hint">Use o formulário para o primeiro contato. Você pode resumir seu caso e deixar os documentos para a consulta.</p>
+          <div class="field">
+            <label for="nome">Nome</label>
+            <input id="nome" name="nome" type="text" autocomplete="name" required maxlength="100">
           </div>
-        </div>
+          <div class="field">
+            <label for="retorno">Como prefere receber o retorno?</label>
+            <select id="retorno" name="retorno">
+              <option value="email">E-mail</option>
+              <option value="whatsapp">WhatsApp</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="email">E-mail para retorno</label>
+            <input id="email" name="email" type="email" autocomplete="email" required maxlength="254">
+          </div>
+          <div class="field" hidden>
+            <label for="telefone">WhatsApp com DDD</label>
+            <input id="telefone" name="telefone" type="tel" autocomplete="tel" placeholder="(11) 99999-9999" maxlength="30" required disabled>
+          </div>
+          <div class="field">
+            <label for="assunto">Assunto</label>
+            <select id="assunto" name="assunto" required>
+              <option value="">Selecione uma opção</option>
+              <option>Direito Cível</option><option>Direito Trabalhista</option><option>Direito Criminal</option>
+              <option>Direito Previdenciário</option><option>Direito Imobiliário</option><option>Direito de Família</option><option>Não sei qual área escolher</option><option>Outro</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="mensagem">Descreva seu caso (opcional)</label>
+            <textarea id="mensagem" name="mensagem" rows="4" maxlength="2000" placeholder="Conte brevemente sobre a sua situação."></textarea>
+          </div>
+          <p class="form-note">Os dados são enviados pelo EmailJS para o advogado responder ao seu contato.</p>
+          <button class="button button-dark" type="submit">Enviar mensagem</button>
+          <div class="form-feedback" id="form-feedback">
+            <p id="form-status" role="status" aria-atomic="true"></p>
+            <a id="form-whatsapp" href="https://wa.me/5513981101869" target="_blank" rel="noopener" hidden>Continuar pelo WhatsApp</a>
+          </div>
+        </form>
       </div>
-      <div class="footer-bottom">
-        <p>&copy; 2025 Dr. Mateus Souza – Todos os direitos reservados.</p>
-      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div><strong>Dr. Mateus Souza</strong><p>Advogado · OAB/SP 525.590</p></div>
+      <a href="#inicio">Voltar ao início</a>
     </div>
   </footer>
-
-  <a href="https://wa.me/5513981101869?text=Olá%2C%20gostaria%20de%20uma%20consulta%20jurídica" class="whatsapp-float"
-    target="_blank" rel="noopener" aria-label="Fale pelo WhatsApp">
-    <i class="fab fa-whatsapp"></i>
-    <span class="whatsapp-tooltip">Fale comigo agora!</span>
-  </a>
-
-  <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">
-    <i class="fas fa-chevron-up"></i>
-  </button>
-  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-  <script>
-    (function () {
-      emailjs.init("iCmB2Kfj2cYT8ifvG");
-    })();
-  </script>
-  <script src="assets/js/main.js"></script>
 </body>
-
 </html>
+
