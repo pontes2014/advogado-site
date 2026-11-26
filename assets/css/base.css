@@ -1,0 +1,148 @@
+:root {
+  color-scheme: light;
+  --forest: #10251f;
+  --gold: #e8ca92;
+  --bronze: #775728;
+  --ivory: #f8f5ee;
+  --white: #fffdf8;
+  --ink: #172921;
+  --muted: #4a5b51;
+  --line: #dcd5c8;
+  --serif: 'Cormorant Garamond', Georgia, serif;
+  --sans: Inter, system-ui, sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+[hidden] {
+  display: none !important;
+}
+html {
+  scroll-padding-top: 6rem;
+}
+body {
+  margin: 0;
+  background: var(--ivory);
+  color: var(--ink);
+  font: 1rem/1.65 var(--sans);
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+a {
+  color: inherit;
+  text-underline-offset: .25em;
+}
+button, input, select, textarea {
+  font: inherit;
+}
+button, summary {
+  cursor: pointer;
+}
+:focus-visible {
+  outline: 3px solid #386e53;
+  outline-offset: 4px;
+}
+.hero :focus-visible, .contact-section :focus-visible, .site-footer :focus-visible {
+  outline-color: var(--gold);
+}
+.contact-form:focus-visible, .contact-form :focus-visible {
+  outline-color: #386e53;
+}
+p, h1, h2, h3, dl, dd, figure {
+  margin: 0;
+}
+h1, h2, h3 {
+  font-family: var(--serif);
+  line-height: 1;
+  font-weight: 700;
+}
+h2 {
+  font-size: clamp(2.85rem, 5.7vw, 5.35rem);
+  letter-spacing: -.04em;
+}
+h2 em {
+  font-weight: 600;
+  color: var(--bronze);
+}
+h3 {
+  font-size: clamp(1.7rem, 2.5vw, 2.25rem);
+  letter-spacing: -.025em;
+}
+h3 + p {
+  margin-top: .65rem;
+}
+.container {
+  width: min(100% - 4rem, 76rem);
+  margin-inline: auto;
+}
+.skip-link {
+  position: fixed;
+  top: .5rem;
+  left: .5rem;
+  z-index: 10;
+  padding: .75rem;
+  background: var(--white);
+  transform: translateY(-150%);
+}
+.skip-link:focus {
+  transform: none;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3rem;
+  border: 1px solid transparent;
+  padding: .7rem 1.2rem;
+  border-radius: .25rem;
+  font-size: .9rem;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color .18s, color .18s, border-color .18s;
+}
+.button-primary {
+  background: var(--gold);
+  color: var(--forest);
+}
+.button-primary:hover {
+  background: #f4dcae;
+}
+.button-outline {
+  border-color: #f8f5ee80;
+  color: var(--white);
+  background: #10251f52;
+}
+.button-outline:hover {
+  background: var(--white);
+  color: var(--forest);
+}
+.button-dark {
+  background: var(--forest);
+  color: var(--white);
+}
+.button-dark:hover {
+  background: #28503d;
+}
+.button:disabled {
+  opacity: .7;
+  cursor: wait;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .button {
+    transition: none;
+  }
+}
+
+
+@media (max-width: 42rem) {
+  .container {
+    width: calc(100% - 2.5rem);
+  }
+}

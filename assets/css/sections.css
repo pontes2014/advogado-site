@@ -1,0 +1,309 @@
+.section {
+  padding-block: clamp(4rem, 8vw, 8rem);
+}
+.band {
+  background: #eee9df;
+}
+.section-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 1rem 2rem;
+  margin-bottom: 2rem;
+}
+.section-heading p {
+  max-width: 16rem;
+  color: var(--muted);
+}
+.area-layout {
+  display: grid;
+  grid-template-columns: minmax(0, .85fr) minmax(0, 2fr);
+  gap: 1rem;
+}
+.area-photo {
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  contain: size;
+  object-fit: cover;
+  border-radius: .4rem;
+}
+.area-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: .75rem;
+}
+.area-card {
+  padding: clamp(1.3rem, 2.5vw, 2rem);
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: .4rem;
+}
+.area-card::before {
+  display: block;
+  content: '';
+  width: 2rem;
+  height: 2px;
+  margin-bottom: 1.2rem;
+  background: #b89158;
+}
+.area-contact {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.75rem;
+  margin-top: .65rem;
+  padding-block: .35rem;
+  color: var(--bronze);
+  font-weight: 600;
+}
+.area-card p, .steps p, .faq p, .approach p, .contact-form p {
+  color: var(--muted);
+}
+.split, .profile-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr);
+  gap: clamp(2rem, 8vw, 8rem);
+}
+.profile-grid {
+  align-items: center;
+}
+.profile-photo {
+  position: relative;
+  overflow: hidden;
+  border-radius: .35rem;
+  background: var(--forest);
+}
+.profile-photo img {
+  width: 100%;
+  aspect-ratio: 5 / 5.5;
+  object-fit: cover;
+  object-position: center 20%;
+}
+.profile-photo figcaption {
+  position: absolute;
+  inset: auto 0 0;
+  display: grid;
+  gap: .1rem;
+  padding: 2.5rem 1.35rem 1rem;
+  background: linear-gradient(transparent, #10251ff2 72%);
+  color: var(--white);
+}
+.profile-photo strong {
+  font: 700 1.8rem/1 var(--serif);
+}
+.profile-photo span {
+  font-size: .8rem;
+  color: var(--gold);
+}
+.profile-copy > p, .approach {
+  margin-top: 1.5rem;
+}
+.approach {
+  padding: .35rem 0 .35rem 1.25rem;
+  border-left: 2px solid #a98249;
+}
+
+#atendimento h2 {
+  max-width: 18ch;
+}
+.steps {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(1rem, 3vw, 2rem);
+  padding: 0;
+  margin: 2.25rem 0 0;
+  list-style-position: inside;
+}
+.steps li {
+  border-top: 1px solid #a98249;
+  padding: 1.35rem 0 .25rem;
+}
+.steps li::marker {
+  color: var(--bronze);
+  font-weight: 700;
+}
+.steps h3 {
+  display: inline;
+}
+.steps p {
+  margin-top: .65rem;
+}
+.faq {
+  border-top: 1px solid #c9bfaf;
+}
+.faq details {
+  border-bottom: 1px solid #c9bfaf;
+}
+.faq summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .7rem;
+  padding: 1.05rem .15rem;
+  font-weight: 700;
+  list-style: none;
+}
+.faq summary::-webkit-details-marker {
+  display: none;
+}
+.faq summary::after {
+  content: '+';
+  flex: 0 0 1.75rem;
+  border: 1px solid #b7a68c;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 1.62rem;
+  color: var(--bronze);
+}
+.faq details[open] summary::after {
+  content: '−';
+  background: var(--forest);
+  color: var(--white);
+  border-color: var(--forest);
+}
+.faq p {
+  padding: 0 2.4rem 1rem .15rem;
+}
+
+.contact-section {
+  background: var(--forest);
+  color: var(--white);
+}
+.contact-section h2 em {
+  color: var(--gold);
+}
+.contact-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 1rem;
+  margin-top: 2rem;
+}
+.contact-list div {
+  padding: .8rem 0;
+  border-top: 1px solid #e8ca9252;
+}
+.contact-list .contact-list-wide {
+  grid-column: 1 / -1;
+}
+.contact-list dt {
+  color: var(--gold);
+  font-size: .875rem;
+  font-weight: 700;
+}
+.contact-list dd {
+  overflow-wrap: anywhere;
+}
+.client-contact {
+  display: grid;
+  justify-items: start;
+  gap: .75rem;
+  margin-top: 1.25rem;
+  padding: 1rem 1.2rem;
+  border: 1px solid #e8ca9252;
+  border-radius: .35rem;
+  background: #ffffff0a;
+}
+.contact-form {
+  padding: clamp(1.35rem, 4vw, 2.5rem);
+  border: 1px solid var(--line);
+  border-radius: .35rem;
+  background: var(--white);
+  color: var(--ink);
+  box-shadow: 0 1.3rem 3rem #07160f45;
+}
+.field {
+  display: grid;
+  gap: .35rem;
+  margin-top: .9rem;
+}
+.field label {
+  font-weight: 600;
+}
+.field input, .field select, .field textarea {
+  width: 100%;
+  min-height: 2.9rem;
+  padding: .6rem .75rem;
+  border: 1px solid #828e83;
+  border-radius: .25rem;
+  background: #fff;
+  color: var(--ink);
+}
+.field select {
+  appearance: none;
+  padding-right: 2.25rem;
+  background-image: linear-gradient(45deg, transparent 50%, var(--forest) 50%), linear-gradient(135deg, var(--forest) 50%, transparent 50%);
+  background-position: right 1.15rem center, right .85rem center;
+  background-size: .3rem .3rem;
+  background-repeat: no-repeat;
+}
+.field textarea {
+  resize: vertical;
+}
+.form-note {
+  font-size: .875rem;
+  margin: .85rem 0 1rem;
+}
+.form-feedback[data-state] {
+  margin-top: .75rem;
+  padding: .75rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: .25rem;
+  background: var(--ivory);
+}
+.form-feedback p {
+  font-weight: 600;
+}
+.form-feedback[data-state="success"] {
+  background: #eff6ee;
+  border-color: #b2c8b2;
+}
+.form-feedback[data-state="success"] p {
+  color: var(--forest);
+}
+.form-feedback[data-state="error"] {
+  background: #fbefeb;
+  border-color: #d8b0a7;
+}
+.form-feedback[data-state="error"] p {
+  color: #842c25;
+}
+.form-feedback a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.75rem;
+  font-weight: 700;
+}
+
+@media (max-width: 52rem) {
+  .area-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .area-photo {
+    display: none;
+  }
+}
+
+@media (max-width: 42rem) {
+  .section-heading {
+    align-items: start;
+    flex-direction: column;
+  }
+  .section-heading p {
+    max-width: none;
+  }
+  .split, .profile-grid, .steps {
+    grid-template-columns: 1fr;
+  }
+  .profile-photo {
+    max-width: 28rem;
+  }
+  .profile-copy {
+    grid-row: 1;
+  }
+}
+
+@media (max-width: 28rem) {
+  .area-grid {
+    grid-template-columns: 1fr;
+  }
+}
